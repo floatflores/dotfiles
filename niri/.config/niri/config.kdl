@@ -277,7 +277,7 @@ layout {
 // spawn-at-startup "waybar"
 spawn-at-startup "fcitx5"
 spawn-at-startup "xwayland-satellite"
-spawn-sh-at-startup "swayidle -w timeout 300 'swaylock -i ~/.local/share/wallpaper/furina-hug.png -f -c 000000' before-sleep 'swaylock -i ~/.local/share/wallpaper/furina-hug.png -f -c 000000'"
+spawn-sh-at-startup "swayidle -w timeout 300 'swaylock -i ~/.local/share/wallpaper/furina-hug.png -f -c 000000' timeout 900 'niri msg action power-off-monitors' before-sleep 'swaylock -i ~/.local/share/wallpaper/furina-hug.png -f -c 000000'"
 spawn-sh-at-startup "qs -c noctalia-shell"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
