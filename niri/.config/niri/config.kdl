@@ -384,7 +384,7 @@ binds {
     Mod+D hotkey-overlay-title="Select Application: rofi" { spawn "rofi" "-show" "drun" "-show-icons"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock" "-i" "~/.local/share/wallpaper/furina-hug.png" "-f" "-c" "000000"; }
     Mod+E hotkey-overlay-title="Open File Explorer: dolphin" { spawn "dolphin"; }
-    Mod+B hotkey-overlay-title="Open Browser: chromium" { spawn "chromium"; }
+    Mod+B hotkey-overlay-title="Open Browser: helium" { spawn "helium-browser"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
