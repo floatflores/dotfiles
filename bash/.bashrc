@@ -14,6 +14,7 @@ alias suspend="systemctl suspend"
 alias hibernate="systemctl hibernate"
 # alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias fixbat="sudo rtcwake -m freeze -s 1"
 PS1='[\u@\h \W]\$ '
 
 if ! shopt -oq posix; then
