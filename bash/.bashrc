@@ -8,11 +8,11 @@ eval "$(fzf --bash)"
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='exa'
+# alias ls='exa'
 alias cl='clear'
 alias suspend="systemctl suspend"
 alias hibernate="systemctl hibernate"
-# alias ls='ls --color=auto'
+alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fixbat="sudo rtcwake -m freeze -s 1"
 PS1='[\u@\h \W]\$ '
@@ -31,3 +31,7 @@ load-yubikey() {
 }
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export PATH="$HOME/.local/bin:$PATH"
+export HISTCONTROL=ignoreboth:erasedups
+shopt -s histappend
+export HISTSIZE=-1
+export HISTFILESIZE=-1
